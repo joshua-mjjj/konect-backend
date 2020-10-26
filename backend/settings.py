@@ -136,7 +136,7 @@ CORS_ORIGIN_WHITELIST = [
 
     "http://localhost:3000",
      "http://localhost:3001",
-     "https://konect-frontend.herokuapp.com"
+     "https://konect-frontend.herokuapp.com",
      "http://konect-frontend.herokuapp.com"
 ]
 
