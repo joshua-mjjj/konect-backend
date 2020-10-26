@@ -137,6 +137,7 @@ CORS_ORIGIN_WHITELIST = [
     "http://localhost:3000",
      "http://localhost:3001",
      "https://konect-frontend.herokuapp.com"
+     "http://konect-frontend.herokuapp.com"
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
