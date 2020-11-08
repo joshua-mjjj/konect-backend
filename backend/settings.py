@@ -135,16 +135,16 @@ USE_TZ = True
 CORS_ORIGIN_WHITELIST = [
 
     "http://localhost:3000",
-     "http://localhost:3001",
-     "https://konect-frontend.herokuapp.com",
-     "http://konect-frontend.herokuapp.com"
+    "http://localhost:3001",
+    "https://konect-frontend.herokuapp.com",
+    "http://konect-frontend.herokuapp.com"
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 django_heroku.settings(locals())
-
 

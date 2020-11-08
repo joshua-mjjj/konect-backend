@@ -15,7 +15,16 @@ from .models import *
 from rest_framework import viewsets
 from rest_framework import permissions
 from django.contrib.auth.models import User
+from django.conf import settings
 
+@api_view(['GET'])    #restricted (system data related)
+def get_api(request):
+	api = {
+		'api': settings.API_KEY
+		}
+	def get_renderers(self):
+	    rends = [renderers.JSONRenderer]
+	return Response(api)
 
 @api_view(['GET'])    #restricted (system data related)
 def Overview(request):
